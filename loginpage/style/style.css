@@ -34,8 +34,8 @@
             transition: var(--main-transition);
         }
         
-        input:focus,
-        input:hover {
+        .login-form input:focus,
+        .login-form input:hover {
             outline: 1px solid black !important;
             box-shadow: 2px 3px 10px black, -2px -3px 10px black !important;
             border: none !important;
