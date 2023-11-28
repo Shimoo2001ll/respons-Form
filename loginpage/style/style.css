@@ -1,0 +1,47 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: var(--main-transition);
+        }
+        
+         :root {
+            --main-color: #ad7eac;
+            --main-transition: all 2s;
+        }
+        /*  global styling */
+        
+        .is-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* end global */
+        
+        .login {
+            background-color: black;
+            border-radius: 30px;
+            padding-top: 10%;
+            margin: 10px auto;
+            width: 100%;
+        }
+        
+        .login-form {
+            padding: 20px;
+            background-color: snow;
+            border-top-left-radius: min(120px, 170px);
+            transition: var(--main-transition);
+        }
+        
+        a.btn {
+            background-color: black;
+            color: white;
+        }
+        
+        a.btn:hover {
+            color: black;
+            font-weight: 700;
+            background-color: white;
+            border: 1px solid black;
+        }
