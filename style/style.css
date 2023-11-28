@@ -23,15 +23,15 @@
 
 /* end global */
 
-.login {
+.sign {
     background-color: black;
     border-radius: 30px;
-    padding-top: 10%;
+    padding-top: 4%;
     margin: 10px auto;
     width: 100%;
 }
 
-.login-form {
+.sign-form {
     padding: 20px;
     background-color: snow;
     border-top-left-radius: min(120px, 170px);
