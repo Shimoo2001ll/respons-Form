@@ -39,10 +39,10 @@
         transition: var(--main-transition);
     }
     
-    .sign-form input:focus,
-    .sign-form input:hover {
+    input:focus,
+    input:hover {
         outline: 1px solid black !important;
-        box-shadow: 2px 3px 10px black, -2px -3px 10px black !important;
+        box-shadow: 2px 5px 10px black, -2px -5px 10px black !important;
         border: none !important;
     }
     
@@ -70,4 +70,34 @@
         text-align: center;
         border-radius: 5px;
         margin: 4px;
+        display: none;
+    }
+    
+    #message {
+        display: none;
+        background: #f1f1f1;
+        color: #000;
+        position: relative;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .valid {
+        color: green;
+    }
+    
+    .valid:before {
+        position: relative;
+        left: -35px;
+        content: "✔";
+    }
+    
+    .invalid {
+        color: red;
+    }
+    
+    .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "✖";
     }

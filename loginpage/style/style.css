@@ -1,54 +1,94 @@
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            transition: var(--main-transition);
-        }
-        
-         :root {
-            --main-color: #ad7eac;
-            --main-transition: all 2s;
-        }
-        /*  global styling */
-        
-        .is-flex {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        /* end global */
-        
-        .login {
-            background-color: black;
-            border-radius: 30px;
-            padding-top: 6%;
-            margin: 10px auto;
-            width: 100%;
-        }
-        
-        .login-form {
-            padding: 20px;
-            background-color: snow;
-            border-top-left-radius: min(120px, 170px);
-            transition: var(--main-transition);
-        }
-        
-        .login-form input:focus,
-        .login-form input:hover {
-            outline: 1px solid black !important;
-            box-shadow: 2px 3px 10px black, -2px -3px 10px black !important;
-            border: none !important;
-        }
-        
-        a.btn {
-            background-color: black;
-            color: white;
-        }
-        
-        a.btn:hover {
-            color: black;
-            font-weight: 700;
-            background-color: white;
-            border: 1px solid black;
-        }
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                transition: var(--main-transition);
+            }
+            
+             :root {
+                --main-color: #ad7eac;
+                --main-transition: all 2s;
+            }
+            /*  global styling */
+            
+            .is-flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            /* end global */
+            
+            .login {
+                background-color: black;
+                border-radius: 30px;
+                padding-top: 6%;
+                margin: 10px auto;
+                width: 100%;
+            }
+            
+            .login-form {
+                padding: 20px;
+                background-color: snow;
+                border-top-left-radius: min(120px, 170px);
+                transition: var(--main-transition);
+            }
+            
+            .login-form input:focus,
+            .login-form input:hover {
+                outline: 1px solid black !important;
+                box-shadow: 2px 3px 10px black, -2px -3px 10px black !important;
+                border: none !important;
+            }
+            
+            .erorr {
+                border: 1px solid rgb(227, 133, 133);
+                padding: 5px;
+                color: red;
+                text-transform: capitalize;
+                text-align: center;
+                border-radius: 5px;
+                margin: 4px;
+                display: none;
+            }
+            
+            a.btn {
+                background-color: black;
+                color: white;
+            }
+            
+            a.btn:hover {
+                color: black;
+                font-weight: 700;
+                background-color: white;
+                border: 1px solid black;
+            }
+            
+            #message {
+                display: none;
+                background: #f1f1f1;
+                color: #000;
+                position: relative;
+                padding: 20px;
+                margin-top: 10px;
+            }
+            
+            .invalid {
+                color: red;
+            }
+            
+            .invalid:before {
+                position: relative;
+                left: -15px;
+                content: "✖";
+            }
+            
+            .valid {
+                color: green;
+            }
+            
+            .valid:before {
+                position: relative;
+                left: -15px;
+                content: "✔";
+            }

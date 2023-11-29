@@ -21,24 +21,37 @@
             <form action="">
                 <div class="is-flex w-100">
                     <div class="form-floating username mb-3 w-75">
-                        <input type="text" class="form-control " id="username" placeholder="jone">
+                        <input type="text" class="form-control " id="username" placeholder="jone" required>
                         <label for="username">User name</label>
+                        <div class="error text-capitalize"><span>
+                            please enter the user name
+                        </span></div>
                     </div>
                     <div class="is-flex w-100">
                         <div class="form-floating mail mb-3 w-75">
-                            <input type="email" class="form-control " id="email-inp" placeholder="example@gmail.com">
+                            <input type="email" class="form-control " id="email-inp" placeholder="example@gmail.com" required>
                             <label for="email-inp">Email</label>
+                            <div class="error text-capitalize"><span>
+                                please enter the email
+                            </span></div>
                         </div>
                         <div class="form-floating mb-3 w-75">
-                            <input type="password" class="form-control " id="pass" placeholder="Password">
+                            <input type="password" class="form-control " id="pass" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                             <label for="pass">Password</label>
+                            <div id="message">
+                                <small>Password must contain the following:</small>
+                                <p id="letter" class="invalid fs-6">A <b>lowercase</b> letter</p>
+                                <p id="capital" class="invalid fs-6">A <b>capital (uppercase)</b> letter</p>
+                                <p id="number" class="invalid fs-6">A <b>number</b></p>
+                                <!-- <p id="length" class="invalid fs-6">Minimum <b> 8 characters</b></p> -->
+                            </div>
                         </div>
                         <div class="form-floating w-75">
-                            <input type="password" class="form-control " id="con-pass" placeholder="Password">
+                            <input type="password" class="form-control " id="con-pass" placeholder="Password" required>
                             <label for="con-pass">Confirm Password</label>
                         </div>
-                        <a href="#" class="btn  m-3 w-75">log in</a>
-                        <!-- <a href="./loginpage/login.html" class="btn  m-3 w-75">log in</a> -->
+                        <!-- <a href="#" class="btn  m-3 w-75">log in</a> -->
+                        <a href="./loginpage/login.html" type="submit" class="btn  m-3 w-75">log in</a>
                         <!-- <a href="../index.html"> </a> -->
                     </div>
             </form>

@@ -1,62 +1,21 @@
-let username = document.querySelector('#username');
-let email = document.querySelector('#email-inp');
-let password = document.querySelector('#pass');
-let con_pass = document.querySelector('#con-pass');
-let error_pass = document.querySelector('#message');
-let logIn = document.querySelector('.btn');
-
-
-
-window.onload = function() {
-        username.focus()
-    }
-    //  check 
-    // logIn.onclick = function(event) {
-    //     if (username.value == "" || email.value == "" || password.value == "" || con_pass.value == "") {
-    //         clickEV()
-    //         event.preventDefault();
-    //         console.log(event);
-    //     } else {}
-    // }
-
-
-
-logIn.addEventListener('click', function(event) {
-    if (username.value == "" || email.value == "" || password.value == "" || con_pass.value == "") {
-
-        event.preventDefault();
-        checkName()
-        checkEmail()
-        checkPass()
-        console.log(event);
-
-
-        // checkPass()
-
-    }
+let email = document.querySelector("#mail");
+let password = document.querySelector("#pass");
+let submit = document.querySelector(".btn");
+let allInp = document.querySelectorAll('input')
+    // when click on the submit btton do functions that check the inputs empty or not
+submit.addEventListener('click', function() {
+    validationEmail()
+    checkPass()
 })
 
-//make function that checkif the user name input empty or not
-function checkName() {
-    if (username.value == "") {
-        document.querySelector('.username .error').style.display = "block"
-    } else {
-
-
-        document.querySelector('.username .error').style.display = "none"
-
-    }
-}
-//  check the email
-function checkEmail() {
+//  check if email input empty or not
+function validationEmail() {
     if (email.value == "") {
-        document.querySelector('.mail .error').style.display = "block"
+        document.querySelector('.erorr').style.display = "block"
     } else {
-        document.querySelector('.mail .error').style.display = "none"
+        document.querySelector('.erorr').style.display = "none"
     }
 }
-
-//  check the pass
 //  check the password
 function checkPass() {
     if (password.value == "") {
@@ -92,7 +51,7 @@ function checkPass() {
                 number.classList.add("invalid");
             }
 
-            // // Validate length
+            // Validate length
             // if (password.value.length >= 8) {
             //     length.classList.remove("invalid");
             //     length.classList.add("valid");
