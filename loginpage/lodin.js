@@ -1,11 +1,15 @@
 let email = document.querySelector("#mail");
 let password = document.querySelector("#pass");
 let submit = document.querySelector(".btn");
-let allInp = document.querySelectorAll('input')
-    // when click on the submit btton do functions that check the inputs empty or not
-submit.addEventListener('click', function() {
-    validationEmail()
-    checkPass()
+// let allInp = document.querySelectorAll('input')
+// when click on the submit btton do functions that check the inputs empty or not
+submit.addEventListener('click', function(event) {
+    if (email.value == "" || password.value == "") {
+
+        event.preventDefault();
+        validationEmail()
+        checkPass()
+    }
 })
 
 //  check if email input empty or not

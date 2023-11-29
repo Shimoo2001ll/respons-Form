@@ -28,7 +28,7 @@ logIn.addEventListener('click', function(event) {
         checkName()
         checkEmail()
         checkPass()
-        console.log(event);
+            // console.log(event);
 
 
         // checkPass()
